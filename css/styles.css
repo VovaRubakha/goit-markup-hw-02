@@ -4,6 +4,8 @@
   --title-text-color: #757575;
   --accent-color: #2196f3;
   --primary-wite-color: #ffffff;
+  --primary-button-color: #f5f4fa;
+  --footer-color: #2f303a;
 }
 body {
   background-color: var(--primary-white-color);
@@ -30,6 +32,10 @@ body {
 }
 
 /* Навигация */
+.site-nav .link {
+  color: var(--main-text-color);
+  text-decoration: none;
+}
 .list {
   color: var(--main-text-color);
   font-size: 14px;
@@ -38,10 +44,6 @@ body {
   letter-spacing: 0.02em;
   list-style: none;
   font-style: normal;
-}
-.nav {
-  color: var(--main-text-color);
-  text-decoration: none;
 }
 .contacts {
   color: var(--title-text-color);
@@ -74,15 +76,17 @@ body {
 
   cursor: pointer;
   font-family: inherit;
+  border: none;
 }
 .button-secondary {
-  color: var(--primary-wite-color);
-  background-color: var(--title-text-color);
+  color: var(--primary-text-color);
+  background-color: var(--primary-button-color);
   font-size: 16px;
   font-weight: 700;
   line-height: 1.88;
   letter-spacing: 0.06em;
 
+  border: none;
   cursor: pointer;
   font-family: inherit;
   text-decoration: none;
@@ -90,6 +94,7 @@ body {
 .button-secondary:hover,
 .button-secondary:focus {
   background-color: var(--accent-color);
+  color: var(--primary-wite-color);
 }
 /* Особенности */
 
@@ -139,9 +144,19 @@ body {
   letter-spacing: 0.03em;
 }
 /* Футтер */
-.address {
+footer {
+  background-color: var(--footer-color);
+}
+footer .logo {
+  color: var(--primary-wite-color);
+}
+address .link {
+  color: #ffffff;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+address .link-alt-color {
+  color: rgb(255, 255, 255, 0.6);
 }
